@@ -3,74 +3,127 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
   </head>
 
-  <div class="site-container">
-    <div class="site-pusher">
-      <header class="header">
-        
-        <a href="#" class="header__icon" id="header__icon"></a>
-        <a href="#" class="header__logo">Logo</a>
-        
-        <nav class="menu">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
-        </nav>
-        
-      </header>
-
-      <div class="site-content">
-
-        <div class="side-nav">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid content">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="#">
+          </a>
         </div>
+      </div>
+    </nav>
+    
+    <div class="container">
+      <div class="row">
+        <div class="content">
+          <section class="col-sm-3 sidebar-module-inset">
+            <h1> First Stuff </h1>
+            <ul>
+              <li>a</li>
+              <li>b</li>
+              <li>c</li>
+              <li>d</li>
+              <li>e</li>
+            </ul>
 
-        <div class="container content-explorer">
-          
-          <h1>Responsive Navigation Bar</h1>
-          <p>Tutorial by Grafikart.fr 
-            <a href="https://www.youtube.com/watch?v=_X2N_yw9Boo" target="_blank" style="color: blue">https://www.youtube.com/watch?v=_X2N_yw9Boo</a>
-          </p>
-          <p>UI Color Palette from 
-            <a href="https://www.google.com/design/spec/style/color.html" target="_blank" style="color: blue">Google Material Design</a>
-          </p>
-          
-          <h2>Animals</h2>
-          <ul>
-            <li>Sabre-Toothed Tiger</li>
-            <li>Old English Sheepdog</li>
-            <li>Little Penguin</li>
-            <li>Striped Rocket Frog</li>
-            <li>Snapping Turtle</li>
-          </ul>
-          
-          <h2 style="background-color: #fff176; display: inline">Hint</h2>
-          <p>Resize the browser window to toggle</p>
-          
-          <h2>Breakfast</h2>
-          <figure>
-            <a href="http://commons.wikimedia.org/wiki/File:Grilled_ham_and_cheese_014.JPG" target="_blank">
-              <img src="http://upload.wikimedia.org/wikipedia/commons/5/50/Grilled_ham_and_cheese_014.JPG" alt="By Glenlarson at English Wikipedia (en.wikipedia) [Public domain], via Wikimedia Commons" style="width: 100%; height: auto;">
-            </a>
-            <figcaption style="font-size: smaller">Breakfast.01 - The picture above has cheese though, mine has no cheese.</figcaption>
-          </figure>
-          <p>I make ham sandwiches in the morning with toasted bread and a cup of fresh milk every weekend.</p>
-          <p>Bacon ipsum dolor sit amet beef kielbasa pancetta sirloin, landjaeger sausage kevin hamburger frankfurter ham.Consequat laborum ham hock culpa pork filet mignon kevin, ribeye leberkas sed tri-tip corned beef ut dolore exercitation.</p>
-          <p>Ground round chicken cow, tongue porchetta sirloin salami kielbasa pork prosciutto venison pork chop capicola.</p>
-          
-        </div> <!-- END container -->
-      </div> <!-- END site-content -->
-      <div class="site-cache" id="site-cache"></div>
-    </div> <!-- END site-pusher -->
-  </div> <!-- END site-container -->
+            <div class="social">
+              <h4> Share this </h4>
+            </div>
+
+            <h4> Recent Discussions </h4>
+
+              <div class="row question"> 
+                <img src="assets/img/placeholder.png" alt="photo" class="mini-profile-photo col-sm-4">
+                <div class="col-sm-8">
+                  <h4> Some question</h4>
+                  <p> Posted By </p>
+                  <p> n Minutes ago </p>
+                </div>
+              </div>
+              <div class="row question"> 
+                <img src="assets/img/placeholder.png" alt="photo" class="mini-profile-photo col-sm-4">
+                <div class="col-sm-8">
+                  <h4> Some question</h4>
+                  <p> Posted By </p>
+                  <p> n Minutes ago </p>
+                </div>
+              </div>
+              <div class="row question"> 
+                <img src="assets/img/placeholder.png" alt="photo" class="mini-profile-photo col-sm-4">
+                <div class="col-sm-8">
+                  <h4> Some question</h4>
+                  <p> Posted By </p>
+                  <p> n Minutes ago </p>
+                </div>
+              </div>
+              
+              <div class="row">
+                <a href="#" class="col">  Start a Topic  </a>
+                <a href="#" class="col">  View All  </a>
+              </div>
+          </section>
+          <section class="col-lg-9 blog-main">
+            <div class="search">
+              <div class="row">
+                <h3 class="col-md-4"> What's going on </h3>
+                <select class="col-sm-3">
+                  <option value="Los Gatos CA"> Los Gatos, CA </option>
+                </select>
+                <input type="text" class="col-sm-5" placeholder="Search (i.e. Bar, Italian, Party)">
+                <button class="btn btn-default" type="button"> Search</button>
+              </div>
+            </div>
+            <div class="main-today">
+              <div class="row">
+                <div class="today-events col-md-6">
+                  <h3> Today's Events </h3>
+                  <div class="image-holder">
+                    <img src="assets/img/placeholder.png">
+                  </div>
+                  <a href=""> <h2> One amazing event is going to happen tonight, be there or be square!</h2> </a>
+                  <div class="row">
+                    <div class="col-sm-6 info">
+                      <h4> Where? </h4>
+                      <p> Armada Beach Club 1211 Ave Caeb</p>
+                    </div>
+                    <div class="col-sm-6 info">
+                      <h4> When? </h4>
+                      <p> 8:00PM to 10:00pm</p>
+                    </div>
+                  </div>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+                </div>
+                <div class="today-deals col-md-6">
+                  <h3> Today's Deals </h3>
+                  <div class="image-holder">
+                    <img src="assets/img/placeholder.png">
+                  </div>
+                  <a href=""> <h2> $20 off of any Three Course Meal for you and your loved one</h2> </a>
+                  <div class="row">
+                    <div class="col-sm-6 info">
+                      <h4> Where? </h4>
+                      <p> Luigi Spagheti Emporium </p>
+                    </div>
+                    <div class="col-sm-6 info">
+                      <h4> When? </h4>
+                      <p> 8:00PM to 10:00pm</p>
+                    </div>
+                  </div>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </body>
 
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="js/hider.js" ></script>
