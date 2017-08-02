@@ -10,9 +10,12 @@ body {
   padding: 0;
 }
 
+p{
+  margin-top: 15px;
+}
+
 .blog-main .row {
   display: flex;
-  align-items: center;
   margin-right: 0px;
   margin-left: 0px;
 }
@@ -22,21 +25,34 @@ body {
   margin: 0 auto;
 }
 
+.dotted-title, .image-holder {
+  border-bottom: dotted;
+}
+
 .image-holder{
   padding: 0px;
 }
 
+.image-holder .row {
+    height: 100px;
+}
+
 .info{
-  vertical-align:middle;
+  background: #CCCCCC;
+}
+
+.main-info{
+  margin-bottom: 40px;
 }
 
 .main-today{
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .main-today img{
   position: relative;
-  width: 90%;
+  width: 100%;
   padding: 10px 20px;
   margin: 0px auto;
 }
@@ -55,23 +71,30 @@ body {
   background: #EEEEEE;
 }
 
+.slide-bottom-change{
+  padding-top: 20px;
+  margin-top: 20px;
+  position: absolute;
+  width: 90%;
+
+  bottom: 0;
+}
+
 .social{
   background: #BBBBBB;
   text-align: center;
 }
 
 .today-events{
-  padding: 0px;
+  padding: 10px;
   margin-right: 20px;
   background: #DDCC11;
 }
 
 .today-deals {
-  padding: 0px;
+  padding: 10px;
   background: #DDCCFF;
 }
 
-.today-events h3, .today-deals h3, .image-holder {
-  border-bottom: dotted;
-}
+
 
