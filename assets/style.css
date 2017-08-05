@@ -13,6 +13,18 @@ a{
   color: #DA7833
 }
 
+a.navbar-brand {
+    padding-top: 0px;
+    margin-left: 10px;
+}
+
+
+a.navbar-brand img {
+  width: 90%;
+  margin-left: 8px;
+  border-radius: 7px;
+}
+
 body{
   background: #ECE9E1;
   color: #444444;
@@ -58,6 +70,7 @@ nav.navbar.navbar-default {
 
 .blog-main{
   padding-top: 20px;
+  padding-bottom: 150px;
   margin-top: 0px;
   background: #FFFFFF;
 }
@@ -79,10 +92,15 @@ nav.navbar.navbar-default {
   border-color: #AAAAAA;
 }
 
-.dashed-title, .image-holder {
+.dashed-title, .dotted-title, .image-holder, dotted-title {
   border-bottom: dashed;
   border-width: 1px;
   border-color: #AAAAAA;
+}
+
+.dotted-title {
+    padding: 5px 20px;
+    margin-bottom: 0px;
 }
 
 .image-holder{
@@ -95,10 +113,20 @@ nav.navbar.navbar-default {
 
 .info{
   background: #CCCCCC;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
-.main-info{
-  margin-bottom: 90px;
+.info button{
+  padding: 10px 20px;
+  background: #A7C451;
+  color: #FFFFFF;
+}
+
+.main-info {
+    padding: 10px 10px 90px 15px;
+    background: #FEF3E9;
 }
 
 .main-today{
@@ -117,6 +145,12 @@ nav.navbar.navbar-default {
 .navbar-header{
   width: 75%;
   margin: 0 auto;
+  padding-left: 200px;
+}
+
+.navbar-header p{
+  padding: 15px;
+  color: #FFFFFF;
 }
 
 .place{
@@ -130,6 +164,13 @@ nav.navbar.navbar-default {
 
 .places .row{
   margin-top: 20px;
+}
+
+.popular-places h3{
+  padding: 10px;
+  background: #ECEBEA;
+  border-radius: 5px;
+  margin-bottom: 0px;
 }
 
 .question{
@@ -147,9 +188,13 @@ nav.navbar.navbar-default {
   border-radius: 5px;
 }
 
+.search button {
+    background: #A7C451;
+    color: #FFFFFF;
+}
+
 .search *{
   margin-right: 15px;
-  background: #EEEEEE;
 }
 
 .search .row {
@@ -167,6 +212,10 @@ nav.navbar.navbar-default {
 
 .selections a:first-child{
   border-right: solid;
+}
+
+.sidebar-module-inset {
+    margin-top: 100px;
 }
 
 .sidebar-module-inset ul a{
@@ -223,13 +272,23 @@ nav.navbar.navbar-default {
   border-radius: 5px;
 }
 
+.today-events, .today-deals{
+  padding: 0px;
+}
+
 .today-events{
-  padding: 10px;
   margin-right: 20px;
-  background: #DDCC11;
+  background: #FEE9D6;
+}
+
+.today-events .image-holder{
+  background: #FEF3E9;
 }
 
 .today-deals {
-  padding: 10px;
-  background: #DDCCFF;
+  background: #E0EBF6;
+}
+
+.today-deals .image-holder, .today-deals .main-info {
+  background: #F4F8FC;
 }
