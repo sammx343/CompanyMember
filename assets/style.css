@@ -1,5 +1,28 @@
 /* VARIABLES */
 /* BASE */
+fieldset {
+  overflow: hidden
+}
+
+.some-class {
+  float: right;
+  clear: none;
+  margin-top: 20px;
+}
+
+label {
+  float: left;
+  clear: none;
+  display: block;
+  padding: 2px 1em 0 0;
+}
+
+input[type=radio],
+input.radio {
+  float: left;
+  clear: none;
+  margin: 2px 0 0 2px;
+}
 html, body, ul{
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
@@ -14,13 +37,12 @@ a{
 }
 
 a.navbar-brand {
-    padding-top: 0px;
-    margin-left: 10px;
+  padding-top: 0px;
+  margin-left: 10px;
 }
 
 a.navbar-brand img {
-  width: 90%;
-  margin-left: 8px;
+  width: 265px;
   border-radius: 7px;
 }
 
@@ -42,12 +64,18 @@ img.mini-profile-photo.col-sm-4 {
   padding-left: 0px;
 }
 
-nav.navbar.navbar-default, p{
-  margin: 0px;
-}
-
 nav.navbar.navbar-default {
   background: #32271E;
+}
+
+nav.navbar.navbar-default p, nav.navbar.navbar-default li a{
+  margin: 15px;
+  color: #FFFFFF;
+}
+
+p{
+  margin: 0;
+  padding: 0;
 }
 
 .btn-twitter {
@@ -78,15 +106,10 @@ nav.navbar.navbar-default {
   margin-left: 0px;
 }
 
-.content{
-  width: 100%;
-  margin: 0 auto;
-}
-
 .discussions, .dashed-title, .dotted-title, 
 .image-holder, dotted-title, .question,.question:first-child, 
-.slide-bottom-change,.sidebar-module-inset ul li, 
-.sidebar-module-inset ul:first-child {
+.slide-bottom-change,.sidebar-module-inset ul li, .sidebar-module-inset ul li:hover
+.sidebar-module-inset ul:first-child, .target-title {
   border-bottom: dashed;
   border-width: 1px;
   border-color: #AAAAAA;
@@ -119,8 +142,12 @@ nav.navbar.navbar-default {
 }
 
 .main-info {
-    padding: 10px 10px 90px 15px;
-    background: #FEF3E9;
+  padding: 10px 10px 90px 15px;
+  background: #FEF3E9;
+}
+
+.main-info p{
+  margin-top: 10px;
 }
 
 .main-today{
@@ -137,9 +164,7 @@ nav.navbar.navbar-default {
 }
 
 .navbar-header{
-  width: 75%;
   margin: 0 auto;
-  padding-left: 200px;
 }
 
 .navbar-header p{
@@ -222,8 +247,6 @@ nav.navbar.navbar-default {
 .sidebar-module-inset ul li:hover{
  list-style: none;
  font-size: 16px;
- border-bottom: dashed;
- border-width: 1px;
  border-color: #000000;
  padding: 15px 0px 15px 75px;
  background: #DDDDDD;
@@ -233,6 +256,14 @@ nav.navbar.navbar-default {
 .sidebar-module-inset ul #home-list {
   background: url('img/list-icons/clock-icon.png') no-repeat;
   background-position: 7px center;
+}
+
+.sign{
+  margin-left: 90px;
+}
+
+.sign a{
+  color: #FFFFFF;
 }
 
 .slide-bottom-change{
@@ -253,6 +284,10 @@ nav.navbar.navbar-default {
 
 .today-events, .today-deals{
   padding: 0px;
+}
+
+.target-title{
+
 }
 
 .today-events{

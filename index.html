@@ -9,12 +9,21 @@
 
   <body>
     <nav class="navbar navbar-default">
-      <div class="container-fluid content">
+      <div class="container content">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
-            <img alt="Brand" src="assets/img/CompanyLogo.png">
+            <img alt="Brand" src="assets/img/CompanyLogo1.png">
           </a>
+        </div>
+        <div class="nav navbar-text">
           <p> Business Owner? <strong> <a href="#">  Go here  </a></strong> </p>
+        </div>
+        <div class="nav navbar-right navbar-text">
+          <div class="sign">
+            <strong> <a href="#">  Sign in,  </a></strong> 
+            <strong> <a href="#">  Sign Up or  </a></strong> 
+            <a href="https://fb.com" title="login-fb" class="btn btn-twitter btn-lg" style="background-color:#3b5998"><i class="fa fa-twitter fa-fw"></i> Login</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -94,54 +103,82 @@
             <div class="main-today">
               <div class="row">
                 <div class="today-events col-md-6">
-                  <h3 class="dotted-title"> Today's Events </h3>
+                  <div class="row dotted-title">
+                    <h3 class="col-sm-6"> Today's Events </h3>
+                    <fieldset>
+                      <div class="some-class col-sm-14">
+                        <input type="radio" class="radio" name="event" value="1" />
+                        <label for="y"> 1 </label>
+                        <input type="radio" class="radio" name="event" value="2" />
+                        <label for="z"> 2</label>
+                        <input type="radio" class="radio" name="event" value="3" />
+                        <label for="y"> 3 </label>
+                        <input type="radio" class="radio" name="event" value="4" />
+                        <label for="z"> 4 </label>
+                      </div>
+                    </fieldset>
+                  </div>
                   <div class="image-holder">
                     <img src="assets/img/placeholder.png">
                   </div>
                   <div class="main-info">
-                    <a href=""> <h3> One amazing event is going to happen tonight, be there or be square!</h3> </a>
+                    <a href=""> <h3 id="event-title"> One amazing event is going to happen tonight, be there or be square!</h3> </a>
                     <div class="row">
                       <div class="col-sm-6">
                         <h4> Where? </h4>
-                        <p> Armada Beach Club 1211 Ave Caeb</p>
+                        <p id="event-place"> Armada Beach Club 1211 Ave Caeb</p>
                       </div>
                       <div class="col-sm-6">
                         <h4> When? </h4>
-                        <p> 8:00PM to 10:00pm</p>
+                        <p id="event-time"> 8:00PM to 10:00pm</p>
                       </div>
                     </div>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+                    <p id="event-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
                   </div>
                   <div class="slide-bottom-change text-right">
                     <a href="#"> <h4> Next Deal </h4></a>
-                    <p> Thanks Dinner giving at Michaels places</p>
+                    <p id="event-next"> Thanks Dinner giving at Michaels places</p>
                   </div>
                 </div>
                 <div class="today-deals col-md-6">
-                  <h3 class="dotted-title"> Today's Deals </h3>
+                  <div class="row dotted-title">
+                    <h3 class="col-sm-6"> Today's Deals </h3>
+                    <fieldset>
+                      <div class="some-class col-sm-14">
+                        <input type="radio" class="radio" name="deal" value="1" />
+                        <label for="y"> 1 </label>
+                        <input type="radio" class="radio" name="deal" value="2" />
+                        <label for="z"> 2</label>
+                        <input type="radio" class="radio" name="deal" value="3" />
+                        <label for="y"> 3 </label>
+                        <input type="radio" class="radio" name="deal" value="4" />
+                        <label for="z"> 4 </label>
+                      </div>
+                    </fieldset>
+                  </div>
                   <div class="image-holder">
                     <img src="assets/img/placeholder.png">
                   </div>
                   <div class="main-info">
                     <div class="row">
                       <div class="col-md-8">
-                        <a href=""> <h3> $20 off of any Three Course Meal for you and your loved one</h3> </a>
-                        <h5> Luigi Spagheti Emporium </h5>
-                        <a href="#"> Los Gatos </a>
+                        <a href=""> <h3 id="deal-title"> $20 off of any Three Course Meal for you and your loved one</h3> </a>
+                        <h5 id="deal-company"> Luigi Spagheti Emporium </h5>
+                        <a href="#" id="deal-address"> Los Gatos </a>
                       </div>
                       <div class="col-md-4 info">
-                        <h1> $20 </h1>
-                        <p> 1h 22m left </p>
-                        <p> 32 purchased </p>
+                        <h1 id="deal-money"> $20 </h1>
+                        <p id="deal-time"> 1h 22m left </p>
+                        <p id="deal-quantity"> 32 purchased </p>
                         <button class="btn btn-default" type="button"> Buy Now </button>
                       </div>
                     </div>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. <a href="#"> More Info </a> </p>
+                    <p id="deal-about"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. <a href="#"> More Info </a> </p>
                   </div>
 
                   <div class="slide-bottom-change text-right">
                     <a href="#"> <h4> Next Deal </h4></a>
-                    <p> 50% off all thanks giving turkeys</p>
+                    <p id="deal-next"> 50% off all thanks giving turkeys</p>
                   </div>
                 </div>
               </div>
@@ -220,4 +257,5 @@
 
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="js/hider.js" ></script>
+  <script type="text/javascript" src="js/slider.js" ></script>
 </html>
